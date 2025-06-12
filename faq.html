@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ - Pilah Pintar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #98f5a3, #4caf50);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .header h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .search-bar {
+      background: white;
+      max-width: 500px;
+      margin: 0 auto;
+      border-radius: 10px;
+      padding: 12px 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-bar input {
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .faq-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .faq-item {
+      background: white;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      cursor: pointer;
+      padding: 16px 20px;
+      font-weight: 600;
+      position: relative;
+      background-color: #e8f5e9;
+    }
+
+    .faq-question::after {
+      content: "+";
+      position: absolute;
+      right: 20px;
+      font-size: 20px;
+    }
+
+    .faq-item.active .faq-question::after {
+      content: "-";
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      background-color: #ffffff;
+      padding: 0 20px;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+      padding: 16px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Bagaimana kami bisa membantu Anda?</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Cari pusat bantuan...">
+    </div>
+  </div>
+
+  <div class="faq-container">
+
+    <!-- FAQ Item Template -->
+    <div class="faq-item">
+      <div class="faq-question">Apa itu aplikasi Pilah Pintar dan bagaimana cara kerjanya?</div>
+      <div class="faq-answer">Pilah Pintar adalah aplikasi digital yang membantu masyarakat menjual sampah anorganik dan organik. Kamu bisa menjadwalkan penjemputan atau datang ke mitra drop-off, lalu mendapatkan uang dan poin dari setiap penjualan sampah.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Bagaimana cara saya mulai menggunakan Pilah Pintar?</div>
+      <div class="faq-answer">Cukup unduh aplikasinya di Play Store, daftar dengan nomor HP atau email, lalu kamu bisa langsung mulai menjual sampah dari rumah atau tempat usaha.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Apakah saya harus membayar untuk menggunakan aplikasi ini?</div>
+      <div class="faq-answer">Tidak. Penggunaan aplikasi Pilah Pintar sepenuhnya gratis, tanpa biaya pendaftaran maupun biaya bulanan.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Apa saja fitur utama yang tersedia di Pilah Pintar?</div>
+      <div class="faq-answer">Fitur utama termasuk penjualan sampah, penjadwalan penjemputan, sistem poin & reward, lokasi mitra drop-off, riwayat transaksi, dan laporan dampak lingkungan.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Bagaimana cara menjual sampah melalui aplikasi Pilah Pintar?</div>
+      <div class="faq-answer">Setelah login, kamu pilih menu "Jual Sampah", tentukan jenis sampah dan beratnya, lalu atur lokasi penjemputan dan foto bukti sampah.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Jenis sampah apa saja yang bisa saya jual melalui aplikasi ini?</div>
+      <div class="faq-answer">Sampah yang diterima antara lain: plastik (botol, gelas, kresek), kertas, kardus, logam, elektronik kecil, dan minyak jelantah. Ketersediaan jenis tergantung wilayah.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Apakah ada syarat tertentu untuk sampah yang ingin dijual?</div>
+      <div class="faq-answer">Ya, sampah harus dalam keadaan bersih dan kering. Plastik dan botol harus dikosongkan, kertas tidak boleh basah atau tercampur minyak.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Bagaimana saya mengetahui harga sampah yang saya jual?</div>
+      <div class="faq-answer">Harga dapat dilihat langsung di aplikasi berdasarkan jenis sampah yang akan dijual.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Berapa minimal jumlah sampah yang bisa dijual?</div>
+      <div class="faq-answer">Tidak ada batas minimal sobat Pilah.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Apa itu sistem poin di Pilah Pintar?</div>
+      <div class="faq-answer">Setiap transaksi penjualan sampah akan memberikan kamu poin sebagai bentuk penghargaan atas kontribusi terhadap lingkungan.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Bagaimana cara saya mendapatkan poin dari penjualan sampah?</div>
+      <div class="faq-answer">Poin didapat secara otomatis setelah transaksi berhasil. Jumlah poin tergantung jenis sampah dan total penjualan.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Bagaimana proses penjemputan sampah bekerja?</div>
+      <div class="faq-answer">Kamu cukup tentukan lokasi penjemputan di aplikasi. Petugas akan datang mengambil sampah sesuai lokasi yang kamu tentukan.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Apakah ada lokasi drop-off sampah jika tidak ingin dijemput?</div>
+      <div class="faq-answer">Ya. Kamu bisa memilih opsi drop-off dan melihat daftar lokasi mitra terdekat langsung di aplikasi.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Bagaimana cara melacak status penjemputan saya?</div>
+      <div class="faq-answer">Kamu bisa melihat status di menu “Riwayat” atau notifikasi aplikasi, termasuk saat sampah sudah dijemput dan dikonfirmasi.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Bagaimana cara saya menghubungi layanan pelanggan jika ada kendala?</div>
+      <div class="faq-answer">Gunakan menu “Bantuan” di aplikasi atau hubungi WhatsApp resmi Pilah Pintar yang tercantum di halaman kontak.</div>
+    </div>
+
+  </div>
+
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      item.querySelector('.faq-question').addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
